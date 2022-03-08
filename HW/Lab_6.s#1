@@ -2776,11 +2776,7 @@ measure current</text>
 <pinref part="IC1" gate="G$1" pin="V+"/>
 <wire x1="182.88" y1="330.2" x2="185.42" y2="330.2" width="0.1524" layer="91"/>
 <pinref part="+3V6" gate="G$1" pin="+3V3"/>
-<wire x1="185.42" y1="330.2" x2="185.42" y2="344.17" width="0.1524" layer="91"/>
-<pinref part="C17" gate="G$1" pin="1"/>
-<wire x1="185.42" y1="344.17" x2="185.42" y2="345.44" width="0.1524" layer="91"/>
-<wire x1="196.85" y1="344.17" x2="185.42" y2="344.17" width="0.1524" layer="91"/>
-<junction x="185.42" y="344.17"/>
+<wire x1="185.42" y1="330.2" x2="185.42" y2="345.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="MODE" gate="1" pin="S"/>
@@ -3119,21 +3115,6 @@ measure current</text>
 </nets>
 </sheet>
 </sheets>
-<errors>
-<approved hash="113,1,231.377,176.756,JP1,,,,,"/>
-<approved hash="113,1,139.596,107.846,FRAME1,,,,,"/>
-<approved hash="113,1,429.156,107.846,FRAME2,,,,,"/>
-<approved hash="113,1,51.7299,191.526,JP2,,,,,"/>
-<approved hash="113,1,132.402,166.37,LED2,,,,,"/>
-<approved hash="113,1,429.156,333.906,FRAME3,,,,,"/>
-<approved hash="113,1,139.596,331.366,FRAME4,,,,,"/>
-<approved hash="113,1,440.985,374.65,MODE,,,,,"/>
-<approved hash="113,1,226.355,101.6,RESET,,,,,"/>
-<approved hash="113,1,211.057,325.346,JP4,,,,,"/>
-<approved hash="113,1,15.0029,175.034,JP5,,,,,"/>
-<approved hash="113,1,33.9499,191.526,JP6,,,,,"/>
-<approved hash="113,1,406.722,351.79,LED1,,,,,"/>
-</errors>
 </schematic>
 </drawing>
 <compatibility>

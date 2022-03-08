@@ -2176,7 +2176,7 @@ Source: &lt;a href="http://www.analog.com/media/en/technical-documentation/data-
 <part name="R3" library="EE445L" deviceset="RESISTOR" device="0204/5" value="1M"/>
 <part name="GND1" library="EE445L" deviceset="TP_LOOP" device=""/>
 <part name="C15" library="EE445L" deviceset="CAPACITOR" device="025-024X044" value="0.1uf"/>
-<part name="R4" library="EE445L" deviceset="POTENTIOMETER_PTA2043" device="B25U" value="10K"/>
+<part name="R4" library="EE445L" deviceset="POTENTIOMETER_PTA2043" device="B25U"/>
 <part name="JP4" library="EE445L" deviceset="PINHD-1X2" device=""/>
 <part name="U2" library="EE445L" deviceset="LP2950" device="ACZ" technology="-3.3"/>
 <part name="JP5" library="EE445L" deviceset="PINHD-1X2" device=""/>
@@ -2776,11 +2776,7 @@ measure current</text>
 <pinref part="IC1" gate="G$1" pin="V+"/>
 <wire x1="182.88" y1="330.2" x2="185.42" y2="330.2" width="0.1524" layer="91"/>
 <pinref part="+3V6" gate="G$1" pin="+3V3"/>
-<wire x1="185.42" y1="330.2" x2="185.42" y2="344.17" width="0.1524" layer="91"/>
-<pinref part="C17" gate="G$1" pin="1"/>
-<wire x1="185.42" y1="344.17" x2="185.42" y2="345.44" width="0.1524" layer="91"/>
-<wire x1="196.85" y1="344.17" x2="185.42" y2="344.17" width="0.1524" layer="91"/>
-<junction x="185.42" y="344.17"/>
+<wire x1="185.42" y1="330.2" x2="185.42" y2="345.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="MODE" gate="1" pin="S"/>
@@ -3013,17 +3009,16 @@ measure current</text>
 </net>
 <net name="ANALOGOUT" class="0">
 <segment>
+<pinref part="IC1" gate="G$1" pin="OUT1"/>
+<pinref part="IC1" gate="G$1" pin="-IN1"/>
+<wire x1="147.32" y1="330.2" x2="147.32" y2="327.66" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="327.66" x2="149.86" y2="327.66" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="330.2" x2="149.86" y2="330.2" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="330.2" x2="149.86" y2="355.6" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="355.6" x2="210.82" y2="355.6" width="0.1524" layer="91"/>
 <pinref part="JP4" gate="G$1" pin="1"/>
 <wire x1="210.82" y1="355.6" x2="210.82" y2="325.12" width="0.1524" layer="91"/>
 <label x="156.21" y="359.41" size="1.778" layer="95"/>
-<pinref part="IC1" gate="G$1" pin="-IN1"/>
-<wire x1="147.32" y1="330.2" x2="147.32" y2="327.66" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="327.66" x2="149.86" y2="327.66" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="OUT1"/>
-<wire x1="147.32" y1="330.2" x2="149.86" y2="330.2" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="355.6" x2="149.86" y2="330.2" width="0.1524" layer="91"/>
-<junction x="149.86" y="330.2"/>
 </segment>
 </net>
 <net name="PE5" class="0">
@@ -3075,9 +3070,8 @@ measure current</text>
 <wire x1="368.3" y1="337.82" x2="368.3" y2="336.55" width="0.1524" layer="91"/>
 <wire x1="368.3" y1="336.55" x2="382.27" y2="336.55" width="0.1524" layer="91"/>
 <wire x1="382.27" y1="336.55" x2="382.27" y2="327.66" width="0.1524" layer="91"/>
+<wire x1="382.27" y1="327.66" x2="421.64" y2="327.66" width="0.1524" layer="91"/>
 <label x="389.89" y="334.01" size="1.778" layer="95"/>
-<wire x1="426.72" y1="327.66" x2="382.27" y2="327.66" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="S"/>
 </segment>
 </net>
 <net name="PE3" class="0">
@@ -3092,48 +3086,21 @@ measure current</text>
 <label x="381" y="340.36" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="PD7" class="0">
+<net name="N$7" class="0">
 <segment>
 <pinref part="JP3" gate="A" pin="13"/>
 <wire x1="203.2" y1="396.24" x2="186.69" y2="396.24" width="0.1524" layer="91"/>
-<label x="180.34" y="396.24" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U1" gate="G$4" pin="PD7"/>
-<wire x1="53.34" y1="335.28" x2="60.96" y2="335.28" width="0.1524" layer="91"/>
-<label x="64.77" y="335.28" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="PE0" class="0">
+<net name="N$8" class="0">
 <segment>
 <pinref part="JP3" gate="A" pin="15"/>
 <wire x1="203.2" y1="393.7" x2="186.69" y2="393.7" width="0.1524" layer="91"/>
-<label x="180.34" y="393.7" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U1" gate="G$5" pin="PE0"/>
-<wire x1="368.3" y1="332.74" x2="373.38" y2="332.74" width="0.1524" layer="91"/>
-<label x="374.65" y="332.74" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
-<errors>
-<approved hash="113,1,231.377,176.756,JP1,,,,,"/>
-<approved hash="113,1,139.596,107.846,FRAME1,,,,,"/>
-<approved hash="113,1,429.156,107.846,FRAME2,,,,,"/>
-<approved hash="113,1,51.7299,191.526,JP2,,,,,"/>
-<approved hash="113,1,132.402,166.37,LED2,,,,,"/>
-<approved hash="113,1,429.156,333.906,FRAME3,,,,,"/>
-<approved hash="113,1,139.596,331.366,FRAME4,,,,,"/>
-<approved hash="113,1,440.985,374.65,MODE,,,,,"/>
-<approved hash="113,1,226.355,101.6,RESET,,,,,"/>
-<approved hash="113,1,211.057,325.346,JP4,,,,,"/>
-<approved hash="113,1,15.0029,175.034,JP5,,,,,"/>
-<approved hash="113,1,33.9499,191.526,JP6,,,,,"/>
-<approved hash="113,1,406.722,351.79,LED1,,,,,"/>
-</errors>
 </schematic>
 </drawing>
 <compatibility>
